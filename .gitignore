@@ -11,6 +11,7 @@ __pycache__/
 *.mp4
 data/json/*.json
 .blend1
+.csv
 
 # models
 models/*.meta
