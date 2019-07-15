@@ -6,10 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
-# mp4 and images and jsons
+# datas
 *.png
 *.mp4
 data/json/*.json
+.blend1
 
 # models
 models/*.meta

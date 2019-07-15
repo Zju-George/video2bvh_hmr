@@ -186,7 +186,7 @@ def main(img_path, json_path=None):
 #     rotations = [cv2.Rodrigues(aa)[0] for aa in pose.reshape(-1, 3)]
 #     print('ROTATIONS:', rotations)
     
-    # visualize(img_path, img, proc_param, joints[0], verts[0], cams[0])
+    visualize(img_path, img, proc_param, joints[0], verts[0], cams[0])
 
 def join_csv():
   path = 'hmr/output/csv/'                   
@@ -212,4 +212,4 @@ if __name__ == '__main__':
     
     join_csv()
     
-    print('\nResult is in hmr/output (you can open images in Colaboratory by double-clicking them)')
+    print('\nResult is in hmr/output')
