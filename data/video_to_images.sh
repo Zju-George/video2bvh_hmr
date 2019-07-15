@@ -7,10 +7,13 @@ if [[ -n "$fps" ]]; then
 
     filename=$(basename -- "$f")
     no_ext="${filename%.*}"
-
-    echo "Processing $no_ext"
-
-    ffmpeg -i $f -r $fps $"sample_images/$no_ext%03d.png"
+    ext="${filename##*.}"
+    if [ $ext = "txt" ]; then
+      echo "Skip text"
+    else
+      echo "Processing $no_ext"
+      ffmpeg -i $f -r $fps $"sample_images/$no_ext%03d.png"
+    fi
   done
   echo "Done"
   
