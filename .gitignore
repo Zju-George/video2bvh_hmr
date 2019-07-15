@@ -9,7 +9,13 @@ __pycache__/
 # mp4 and images and jsons
 *.png
 *.mp4
-/data/json/*.json
+data/json/*.json
+
+# models
+models/*.meta
+models/*.data-00000-of-00001
+models/*.pkl
+
 # Distribution / packaging
 .Python
 build/
