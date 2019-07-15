@@ -6,10 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
-# mp4 and images
+# mp4 and images and jsons
 *.png
 *.mp4
-
+/data/json/*.json
 # Distribution / packaging
 .Python
 build/
